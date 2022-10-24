@@ -38,6 +38,18 @@ contract Lottery {
         return _pot;
     }
 
+    /**
+     * @dev 배팅과 동시에 정답 체크를 한다.
+     * @param challenges 유저가 베팅하는 글자
+     * @return 함수가 잘 수행되었는지 확인해는 bool 값
+     */
+    function betAndDistribute(byte challenges) public payable returns (bool result) {
+        bet(challenges);
+        
+        distribute();
+
+        return true;
+    }
     // 배팅을 하고 결과값을 검증 해야함.
     // 1. Bet
         // Save the Bet to the Queue

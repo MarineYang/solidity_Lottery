@@ -47,7 +47,36 @@ contract('Lottery', function([deployer, user1, user2]) {
 
         })
     })
+    describe('Distribute', function() {
+        describe('When the answer is checkable', function () {
+            it('should give the user the pot when the answer matches', async () => {
+                // 두 글자 다 맞았을 때
+                // betAndDistrubute
 
+                // await lottery.setAnswerforTest()
+                // pot 머니의 변화량 확인
+                // user의 balance 값을 확인.
+                
+            })
+            it('should give the user the pot when the answer matches', async () => {
+                // 한 글자만 맞았을 때
+                
+            })
+
+            it('should give the user the pot when the answer matches', async () => {
+                // 다 틀렸을 떄
+                
+            })
+        })
+        describe('When the answer is checkable', function () {
+            
+        })
+
+        describe('When the answer is checkable', function () {
+            
+        })
+        
+    })
     describe.only('isMatch', function() {
         let blockHash = '0xab920efd7cab25b5f7c4b451060bfaeb975844c5cdc9cd29d17376d73c00dda8'
 
